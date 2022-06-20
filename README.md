@@ -3,12 +3,13 @@
 **Projeto Detecção de Fraude**
 
 O projeto foi desenvolvido utilizando linguagem **Python** no Jupyter Notebook. O python possui um série de bibliotecas que nos auxiliam na construção das análises e modelagem dos dados. Neste projeto, foram utilizadas as seguintes:
-Pandas
-Numpy
-Seaborn
-Matplotlib
-Imbalanced-learn
-Scikit-learn
+
+   - Pandas
+   - Numpy
+   - Seaborn
+   - Matplotlib
+   - Imbalanced-learn
+   - Scikit-learn
 
 **Objetivo**
 
