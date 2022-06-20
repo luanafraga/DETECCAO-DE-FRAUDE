@@ -54,12 +54,12 @@ Por fim, verificamos os seguintes pontos importantes para a **detecção de frau
    - Tipos de movimentação **transferências e cash-out** são os com mais probabilidade de ser uma fraude. **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando as movimentações forem do tipo transferência ou cash-out;
    
  
-   - Tipos de movimentação **pagamento e cash-in** são os com menos probabilidade de ser uma fraude. 
+   - Tipos de movimentação **pagamento e cash-in** são os com menos probabilidade de ser uma fraude; 
    
    
-   - Quando o padrão de compra do cliente é em determinado horário, a transação **fraude costuma ocorrer em período diferente do padrão** (ex: padrão de movimentação pela manhã - fraude pela noite, padrão de movimentação início do mês - fraude final de mês. **Plano de ação**: Uma verificação que pode aumentar a segurança do cliente em horários que não são convencionais.
+   - Quando o padrão de compra do cliente é em determinado horário, a transação **fraude costuma ocorrer em período diferente do padrão** (ex: padrão de movimentação pela manhã - fraude pela noite, padrão de movimentação início do mês - fraude final de mês. **Plano de ação**: Uma verificação que pode aumentar a segurança do cliente em horários que não são convencionais;
    
    
-   - A grande maioria das fraudes **esvaziam os fundos** do cliente 1, transferindo para outra conta e depois **sacando do sistema.** **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando o valor da movimentação for igual ao valor total da conta;
+   - A grande maioria das fraudes **esvaziam os fundos** do cliente 1, transferindo para outra conta e depois **sacando do sistema.** **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando o valor da movimentação for igual ao valor total da conta.
    
 
