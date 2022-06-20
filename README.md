@@ -13,7 +13,7 @@ O projeto foi desenvolvido utilizando linguagem **Python** no Jupyter Notebook. 
 
 **Objetivo**
 
-O objetivo deste projeto é a **detecção**, e consequentemente a **diminuição de fraudes**, identificando os **padrões de compra** de cada cliente a partir de informações como nome, cartão de crédito e documentos pessoais.
+O objetivo deste projeto é a **detecção**, e consequentemente a **diminuição de fraudes** em transações financeiras, identificando os **padrões de compra** de cada cliente a partir de informações como nome, cartão de crédito e documentos pessoais.
 
 **Dados**
 
@@ -48,7 +48,7 @@ A base de dados possui informações sobre:
 
 Após o pré-processamento dos dados, foram criados 3 modelos de machine learning com a biblioteca Scikit Learn: Regressão Logística, Árvore de decisão e Random Forest. Esses modelos foram treinados e avaliados utilizando métricas de avaliação matemáticas e gráficas, para a escolha do melhor modelo. O melhor modelo, o **Random Forest**, então passou por uma otimização dos hiperparâmetros para que o modelo pudesse ser posto em prática.
 
-Por fim, Verificamos os seguintes pontos importantes para a **detecção de fraude**:
+Por fim, Verificamos os seguintes pontos importantes para a **detecção de fraude** em movimentações financeiras:
 
 
    - Tipos de movimentação **transferências e cash-out** são os com mais probabilidade de ser uma fraude. **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando as movimentações forem do tipo transferência ou cash-out;
