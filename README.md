@@ -1,6 +1,7 @@
 # DETECCAO-DE-FRAUDE
 
 Projeto Detecção de Fraude
+
 O projeto foi desenvolvido utilizando linguagem Python no Jupyter Notebook. O python possui um série de bibliotecas que nos auxiliam na construção das análises e modelagem dos dados. Neste projeto, foram utilizadas as seguintes:
 Pandas
 Numpy
@@ -10,16 +11,8 @@ Imbalanced-learn
 Scikit-learn
 
 Objetivo
+
 O objetivo deste projeto é a **detecção**, e consequentemente a **diminuição de fraudes**, identificando os **padrões de compra** de cada cliente a partir de informações como nome, cartão de crédito e documentos pessoais.
-
-Conclusão
-Em uma perspectiva de retenção de clientes, é interessante conseguir prever aqueles com maior potencial de evasão. Sendo assim, o melhor modelo é aquele que possui maior taxa de acerto para churn (True positive ou verdadeiro positivo). Isso se deve ao fato de que, da perspectiva de negócio, é mais fácil e mais barato manter um cliente do que conseguir novos clientes.
-
-Sendo assim, optei por dar maior peso, ou seja, considerar como melhor modelo, aquele que retornou a menor quantidade de falsos negativos, modelo Decision Tree Classifier.
-
-O modelo foi testado com a base de dados balanceado utilizando over-sampling - SMOTE.
-
-A melhor performance se deu aplicando o SMOTE. Apesar do valor baixo para a precisão da variável 1 (churn), o recall melhorou muito, comparado com o resultado obtido com a base sem balanceamento, apresentando o menor número de falsos-positivos dentre as abordagens de balanceamento dos dados e redução dos falsos-negativos.
 
 Dados
 
@@ -47,3 +40,25 @@ A base de dados possui informações sobre:
    - **isFraud**: São as transações feitas pelos agentes fraudulentos dentro da simulação. 
 
    - **isFlaggedFraud**: O modelo de negócios visa controlar transferências massivas de uma conta para outra e sinaliza tentativas ilegais. Uma tentativa ilegal neste conjunto de dados é uma tentativa de transferir mais de 200.000 em uma única transação.
+
+
+Conclusões
+
+Verificamos os seguintes pontos importantes para a **detecção de fraude**:
+
+
+   - Tipos de movimentação **transferências e cash-out** são os com mais probabilidade de ser uma fraude. **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando as movimentações forem do tipo transferência ou cash-out;
+   
+ 
+   - Tipos de movimentação **pagamento e cash-in** são os com menos probabilidade de ser uma fraude. 
+   
+   
+   - Quando o padrão de compra do cliente é em determinado horário, a transação **fraude costuma ocorrer em período diferente do padrão** (ex: padrão de movimentação pela manhã - fraude pela noite, padrão de movimentação início do mês - fraude final de mês. **Plano de ação**: Uma verificação que pode aumentar a segurança do cliente em horários que não são convencionais.
+   
+   
+   - A grande maioria das fraudes **esvaziam os fundos** do cliente 1, transferindo para outra conta e depois **sacando do sistema.** **Plano de ação**: Solicitar uma verificação de informação adicional, com uma pergunta de segurança, quando o valor da movimentação for igual ao valor total da conta;
+   
+
+Após o pré-processamento dos dados, foram criados 3 modelos de machine learning com a biblioteca Scikit Learn: Regressão Logística, Árvore de decisão e Random Forest. Esses modelos foram treinados e avaliados utilizando métricas de avaliação matemáticas e gráficas, para a escolha do melhor modelo. O melhor modelo, o Random Forest, então passou por uma otimização dos hiperparâmetros para que o modelo pudesse ser posto em prática.
+
+O modelo foi testado com a base de dados balanceado utilizando over-sampling - SMOTE.
